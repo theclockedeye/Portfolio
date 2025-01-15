@@ -8,7 +8,7 @@ interface ProfileImageProps {
 
 const ProfileImage = ({ imageUrl, alt }: ProfileImageProps) => {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.5, duration: 0.5 }}
@@ -16,7 +16,7 @@ const ProfileImage = ({ imageUrl, alt }: ProfileImageProps) => {
     >
       <div className="relative w-64 h-64 md:w-80 md:h-80">
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full blur-lg opacity-50"></div>
-        <img 
+        <img
           src={imageUrl}
           alt={alt}
           className="relative rounded-full w-full h-full object-cover border-4 border-white/10"
